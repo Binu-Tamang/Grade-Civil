@@ -9764,7 +9764,14 @@ section.quote-banner {
 .gallhp-link a {
   border: 1px solid;
   padding: 15px;
+  transition: 0.3s ease;
 }
+.gallhp-link a:hover {
+  background: #2a2a2a;
+  text-decoration: none;
+  border: 1px solid #2a2a2a;
+}
+
 
 .footer-info img {
   width: 160px;
