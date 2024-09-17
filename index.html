@@ -29,6 +29,12 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
+    <!-- AOS CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -36,10 +42,10 @@
   <body>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark py-2">
-      <div class="container">
+      <div class="container m-0" style="max-width: 100%;">
         <div class="row">
-          <div class="col-md-8 col-sm-12 text-center text-lg-left mb-2 mb-lg-0">
-            <div class="top-header-info d-flex">
+          <div class="col-md-9 col-sm-12 text-center mb-2 mb-lg-0">
+            <div class="top-header-info d-flex justify-content-center">
               <a class="top-info pr-3" href="tel:0434406455"
                 ><i class="fa fa-phone-alt mr-2"></i> 0434406455</a
               >
@@ -51,13 +57,17 @@
               <a class="top-info pl-3" href="">ABN: 45 676 897 279</a>
             </div>
           </div>
-          <div class="col-md-4 text-center text-lg-right d-none d-sm-block">
+          <div class="col-md-3 col-sm-12 text-center d-none d-sm-block">
             <div class="d-inline-flex align-items-center">
-              <a class="top-info px-3" href="#">
+              <a
+                class="top-info px-3"
+                href="#"
+                style="border-right: 1px solid;"
+              >
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a class="top-info px-3" href="#">
-                <i class="fab fa-twitter"></i>
+              <a class="top-info px-3" href="#" style="border-right: 1px solid;">
+                <i class="fab fa-twitter"></i> 
               </a>
               <a class="top-info px-3" href="#">
                 <i class="fab fa-instagram"></i>
@@ -71,12 +81,12 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
-      <div class="position-relative" style="z-index: 9">
+      <div class="position-relative" style="z-index: 9;">
         <nav
           class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0 pl-3 pl-lg-5"
         >
           <div class="row">
-            <div class="col-md-3 col-sm-6 d-flex smll-navbar">
+            <div class="col-md-2 col-sm-6 d-flex smll-navbar align-items-center" style="justify-content: space-between;">
               <a href="index.html" class="navbar-brand">
                 <img class="main-logo" src="img/logo.png" alt="" />
               </a>
@@ -91,12 +101,12 @@
                 </button>
               </div>
             </div>
-            <div class="col-md-9 d-flex box-none">
+            <div class="col-md-10 d-flex box-none">
               <div class="collapse navbar-collapse px-3" id="navbarCollapse">
                 <div class="navbar-nav py-0">
                   <a href="index.html" class="nav-item nav-link active">Home</a>
-                  <a href="#" class="nav-item nav-link">About</a>
-                  <a href="#" class="nav-item nav-link">Service</a>
+                  <a href="#" class="nav-item nav-link">About Us</a>
+                  <a href="#" class="nav-item nav-link">Services</a>
                   <a href="#" class="nav-item nav-link">Our Work</a>
                   <!-- <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -122,7 +132,7 @@
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0">
+    <section class="container-fluid p-0">
       <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -130,13 +140,13 @@
             <div
               class="carousel-caption d-flex flex-column align-items-center justify-content-center"
             >
-              <div class="p-3" style="max-width: 800px">
+              <div class="p-3" style="max-width: 800px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <span
                   class="text-white d-block text-uppercase font-weight-normal mb-md-3"
                   >Your Trusted
                 </span>
                 <strong class="display-4 banner-tittle text-white mb-md-4"
-                  >Partner in Paving & Landscape Preparations</strong
+                  >Partner in Consturction and Landscaping Preperation</strong
                 >
                 <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4"
                   >Learn More</a
@@ -149,7 +159,7 @@
             <div
               class="carousel-caption d-flex flex-column align-items-center justify-content-center"
             >
-              <div class="p-3" style="max-width: 800px">
+              <div class="p-3" style="max-width: 800px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <span
                   class="text-white d-block text-uppercase font-weight-normal mb-md-3"
                   >Comprehensive
@@ -168,13 +178,13 @@
             <div
               class="carousel-caption d-flex flex-column align-items-center justify-content-center"
             >
-              <div class="p-3" style="max-width: 800px">
+              <div class="p-3" style="max-width: 800px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <span
                   class="text-white d-block text-uppercase font-weight-normal mb-md-3"
                   >Expert In</span
                 >
                 <strong class="display-4 banner-tittle text-white mb-md-4">
-                  Earthworks & Civil Solutions for Every Project</strong
+                  Earthworks & Civil Construction for Every Project</strong
                 >
                 <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4"
                   >Learn More</a
@@ -188,7 +198,7 @@
           href="#header-carousel"
           data-slide="prev"
         >
-          <div class="btn btn-primary" style="width: 45px; height: 45px">
+          <div class="btn btn-primary" style="width: 45px; height: 45px;">
             <span class="carousel-control-prev-icon mb-n2"></span>
           </div>
         </a>
@@ -197,21 +207,26 @@
           href="#header-carousel"
           data-slide="next"
         >
-          <div class="btn btn-primary" style="width: 45px; height: 45px">
+          <div class="btn btn-primary" style="width: 45px; height: 45px;">
             <span class="carousel-control-next-icon mb-n2"></span>
           </div>
         </a>
       </div>
-    </div>
+    </section>
     <!-- Carousel End -->
 
     <!-- About Start -->
     <div class="container-fluid bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 order-md-1 order-2">
+          <div
+            class="col-lg-5 order-md-1 order-2"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+          >
             <div
-              class="d-flex flex-column align-items-center justify-content-center position-relative h-100 py-5 px-3 py-only-sec"
+              class="d-flex flex-column align-items-center justify-content-center position-relative h-100 py-5 px-3 py-only-sec padding-box"
             >
               <img class="img-abt-1" src="img/abt-1.jpg" alt="" />
               <div class="exp-yrs">
@@ -225,7 +240,7 @@
                   <strong
                     class="text-white d-block counter-number"
                     id="yearsEstablished"
-                    >25 <span class="plus-sign">+</span></strong
+                    >25 </strong
                   >
                   <p>Years Established</p>
                 </div>
@@ -236,6 +251,9 @@
           </div>
           <div
             class="col-lg-7 m-0 my-lg-5 pt-5 pb-5 pb-lg-2 pl-lg-5 order-md-2 order-1"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
           >
             <h6 class="text-primary font-weight-normal text-uppercase mb-3">
               Learn About Us
@@ -272,7 +290,8 @@
                     alt="icon"
                   />
                   <h5 class="text-truncate m-0">
-                    Commitment to Quality & Precision
+                    <!-- Commitment to Quality & Precision -->
+                    Quality & Precision Works
                   </h5>
                 </div>
               </div>
@@ -306,136 +325,388 @@
     <!-- About End -->
 
     <!-- Services Start -->
-    <div class="container-fluid py-5">
-      <div class="container py-5 py-only-sec">
-        <div class="row">
-          <div class="col-lg-5 pr-lg-0">
-            <h6 class="text-primary font-weight-normal text-uppercase mb-3">
-              Our Services
-            </h6>
-            <h2 class="mb-4 section-title">
-              Service Offerings: What Service Do You Need?
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              dolores dignissimos hic et id impedit at alias esse odit quas,
-              aliquam facere voluptatibus, doloremque nostrum soluta quod cum
-              tenetur saepe!
-            </p>
-            <a href="" class="btn btn-primary mt-3 py-2 px-4"
-              >View All Services</a
-            >
-          </div>
-          <div class="col-lg-7 p-0 pt-5 pt-lg-0">
-            <div class="owl-carousel service-carousel position-relative">
-              <div class="d-flex flex-column text-center bg-light mx-3 p-2">
-                <img
-                  class="services-img"
-                  src="img/services/earth-work.jpg"
-                  alt=""
-                />
+    <!-- <div class="container-fluid py-5">
+    <div class="container py-5 py-only-sec">
+      <div class="row">
+        <div class="col-lg-5 pr-lg-0">
+          <h6 class="text-primary font-weight-normal text-uppercase mb-3">
+            Our Services
+          </h6>
+          <h2 class="mb-4 section-title">
+            Service Offerings: What Service Do You Need?
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            dolores dignissimos hic et id impedit at alias esse odit quas,
+            aliquam facere voluptatibus, doloremque nostrum soluta quod cum
+            tenetur saepe!
+          </p>
+          <a href="" class="btn btn-primary mt-3 py-2 px-4">View All Services</a>
+        </div>
+        <div class="col-lg-7 p-0 pt-5 pt-lg-0">
+          <div class="owl-carousel service-carousel position-relative">
+            <div class="d-flex flex-column text-center bg-light mx-3 p-2">
+              <img class="services-img" src="img/services/earth-work.jpg" alt="" />
 
-                <div class="d-flex flex-column bg-secondary text-center py-3">
-                  <h5 class="mb-3 text-white">Earth Works</h5>
-                  <a href="#">Read More</a>
-                </div>
+              <div class="d-flex flex-column bg-secondary text-center py-3">
+                <h5 class="mb-3 text-white">Recycled Asphalt Driveways</h5>
+                <a href="#">Read More</a>
               </div>
+            </div>
 
-              <div class="d-flex flex-column text-center bg-light mx-3 p-2">
-                <img
-                  class="services-img"
-                  src="img/services/civil-work.jpg"
-                  alt=""
-                />
+            <div class="d-flex flex-column text-center bg-light mx-3 p-2">
+              <img class="services-img" src="img/services/civil-work.jpg" alt="" />
 
-                <div class="d-flex flex-column bg-secondary text-center py-3">
-                  <h5 class="mb-3 text-white">Civil Works</h5>
-                  <a href="#">Read More</a>
-                </div>
+              <div class="d-flex flex-column bg-secondary text-center py-3">
+                <h5 class="mb-3 text-white">Parking Lot Construction</h5>
+                <a href="#">Read More</a>
               </div>
+            </div>
 
-              <div class="d-flex flex-column text-center bg-light mx-3 p-2">
-                <img
-                  class="services-img"
-                  src="img/services/paving-preps.jpg"
-                  alt=""
-                />
+            <div class="d-flex flex-column text-center bg-light mx-3 p-2">
+              <img class="services-img" src="img/services/paving-preps.jpg" alt="" />
 
-                <div class="d-flex flex-column bg-secondary text-center py-3">
-                  <h5 class="mb-3 text-white">Paving Preparations</h5>
-                  <a href="#">Read More</a>
-                </div>
+              <div class="d-flex flex-column bg-secondary text-center py-3">
+                <h5 class="mb-3 text-white">Recycled Road Base</h5>
+                <a href="#">Read More</a>
               </div>
+            </div>
 
-              <div class="d-flex flex-column text-center bg-light mx-3 p-2">
-                <img
-                  class="services-img"
-                  src="img/services/landscape-preps.jpg"
-                  alt=""
-                />
+            <div class="d-flex flex-column text-center bg-light mx-3 p-2">
+              <img class="services-img" src="img/services/landscape-preps.jpg" alt="" />
 
-                <div class="d-flex flex-column bg-secondary text-center py-3">
-                  <h5 class="mb-3 text-white">Landscape Preparations</h5>
-                  <a href="#">Read More</a>
-                </div>
+              <div class="d-flex flex-column bg-secondary text-center py-3">
+                <h5 class="mb-3 text-white">Lime Storms</h5>
+                <a href="#">Read More</a>
               </div>
+            </div>
 
-              <div class="d-flex flex-column text-center bg-light mx-3 p-2">
-                <img
-                  class="services-img"
-                  src="img/services/driveways.jpg"
-                  alt=""
-                />
+            <div class="d-flex flex-column text-center bg-light mx-3 p-2">
+              <img class="services-img" src="img/services/driveways.jpg" alt="" />
 
-                <div class="d-flex flex-column bg-secondary text-center py-3">
-                  <h5 class="mb-3 text-white">Driveways</h5>
-                  <a href="#">Read More</a>
-                </div>
+              <div class="d-flex flex-column bg-secondary text-center py-3">
+                <h5 class="mb-3 text-white">Car Park Construction</h5>
+                <a href="#">Read More</a>
               </div>
+            </div>
 
-              <div class="d-flex flex-column text-center bg-light mx-3 p-2">
-                <img
-                  class="services-img"
-                  src="img/services/recycled-asphalt.jpg"
-                  alt=""
-                />
+            <div class="d-flex flex-column text-center bg-light mx-3 p-2">
+              <img class="services-img" src="img/services/recycled-asphalt.jpg" alt="" />
 
-                <div class="d-flex flex-column bg-secondary text-center py-3">
-                  <h5 class="mb-3 text-white">Recycled Asphalt</h5>
-                  <a href="#">Read More</a>
-                </div>
+              <div class="d-flex flex-column bg-secondary text-center py-3">
+                <h5 class="mb-3 text-white">Residential Construction</h5>
+                <a href="#">Read More</a>
               </div>
+            </div>
 
-              <div class="d-flex flex-column text-center bg-light mx-3 p-2">
-                <img
-                  class="services-img"
-                  src="img/services/soakwell-install.jpg"
-                  alt=""
-                />
+            <div class="d-flex flex-column text-center bg-light mx-3 p-2">
+              <img class="services-img" src="img/services/soakwell-install.jpg" alt="" />
 
-                <div class="d-flex flex-column bg-secondary text-center py-3">
-                  <h5 class="mb-3 text-white">Soakwell Installation</h5>
-                  <a href="#">Read More</a>
-                </div>
+              <div class="d-flex flex-column bg-secondary text-center py-3">
+                <h5 class="mb-3 text-white">Soakwell Installation</h5>
+                <a href="#">Read More</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
+  </div>
+  </div> -->
+
+    <section class="section section-servhp mb-4">
+      <div class="container">
+        <div class="section-inner">
+          <div class="servhp">
+            <div
+              class="section-head text-center aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h6
+                class="text-primary font-weight-normal text-uppercase mt-5 mb-3"
+              >
+                Our Services
+              </h6>
+              <h2 class="mb-4 section-title">
+                Service Offerings: What Service Do You Need?
+              </h2>
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                porro modi exercitationem dolorum doloribus nobis quia veritatis
+                quam obcaecati! Pariatur voluptates
+              </p>
+              <div
+                class="heading-separator aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                style="animation-delay: 750ms;"
+              ></div>
+            </div>
+            <div class="section-body">
+              <div class="servhp-row row">
+                <!-- Service Card 1 -->
+                <div
+                  class="servhp-col col-lg-4 col-md-6 aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="1000"
+                >
+                  <div class="servhp-card">
+                    <div class="servhp-card-img">
+                      <a href="#">
+                        <div
+                          class="imgtobg-o"
+                          style="
+                            background-image: url(img/services/recycled-asphalt.jpg);
+                          "
+                        >
+                          <img
+                            src="img/services/recycled-asphalt.jpg"
+                            alt=""
+                            class="imgtobg-img imgtobg"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="servhp-card-cont">
+                      <div class="servhp-card-icon">
+                        <img src="img/icon/recycle.webp" alt="" />
+                      </div>
+                      <h3>Recycled Asphalt</h3>
+                      <p class="truncate-text" data-maxlength="150">
+                        Lorem, adipisicing adipisicing ipsum dolor sit amet
+                        consectetur adipisicing elit. omnis, voluptas
+                        accusantium ex minus...
+                      </p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div
+                  class="servhp-col col-lg-4 col-md-6 aos-init aos-animate d-none d-sm-block none-box"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
+                >
+                  <div class="servhp-card">
+                    <div class="servhp-card-img">
+                      <a href="#">
+                        <div
+                          class="imgtobg-o"
+                          style="
+                            background-image: url(img/services/driveways.jpg);
+                          "
+                        >
+                          <img
+                            src="img/services/driveways.jpg"
+                            alt=""
+                            class="imgtobg-img imgtobg"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="servhp-card-cont">
+                      <div class="servhp-card-icon">
+                        <img src="img/icon/architecture.webp" alt="" />
+                      </div>
+                      <h3>Limestone Driveways</h3>
+                      <p class="truncate-text" data-maxlength="150">
+                        Lorem, adipisicing adipisicing ipsum dolor sit amet
+                        consectetur adipisicing elit. omnis, voluptas
+                        accusantium ex minus...
+                      </p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div
+                  class="servhp-col col-lg-4 col-md-6 aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
+                >
+                  <div class="servhp-card">
+                    <div class="servhp-card-img">
+                      <a href="#">
+                        <div
+                          class="imgtobg-o"
+                          style="
+                            background-image: url(img/services/soakwell-install.jpg);
+                          "
+                        >
+                          <img
+                            src="img/services/soakwell-install.jpg"
+                            alt=""
+                            class="imgtobg-img imgtobg"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="servhp-card-cont">
+                      <div class="servhp-card-icon">
+                        <img src="img/icon/drainage.webp" alt="" />
+                      </div>
+                      <h3>Stormwater Drainage/Soakwells</h3>
+                      <p class="truncate-text" data-maxlength="150">
+                        Lorem, adipisicing adipisicing ipsum dolor sit amet
+                        consectetur adipisicing elit. omnis, voluptas
+                        accusantium ex minus...
+                      </p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Service Card 4 -->
+                <div
+                  class="servhp-col col-lg-4 col-md-6 aos-init d-none d-sm-block none-box"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
+                >
+                  <div class="servhp-card">
+                    <div class="servhp-card-img">
+                      <a href="#">
+                        <div
+                          class="imgtobg-o"
+                          style="
+                            background-image: url(img/services/civil-work.jpg);
+                          "
+                        >
+                          <img
+                            src="img/services/civil-work.jpg"
+                            alt=""
+                            class="imgtobg-img imgtobg"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="servhp-card-cont">
+                      <div class="servhp-card-icon">
+                        <img src="img/icon/house.webp" alt="" />
+                      </div>
+                      <h3>Residential Civil Construction</h3>
+                      <p class="truncate-text" data-maxlength="150">
+                        Lorem, adipisicing adipisicing ipsum dolor sit amet
+                        consectetur adipisicing elit. omnis, voluptas
+                        accusantium ex minus...
+                      </p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Service Card 5 -->
+                <div
+                  class="servhp-col col-lg-4 col-md-6 aos-init"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  data-aos-duration="1000"
+                >
+                  <div class="servhp-card">
+                    <div class="servhp-card-img">
+                      <a href="#">
+                        <div
+                          class="imgtobg-o"
+                          style="
+                            background-image: url(img/services/Basements-Undercrofts-3.jpg);
+                          "
+                        >
+                          <img
+                            src="img/services/Basements-Undercrofts-3.jpg"
+                            alt=""
+                            class="imgtobg-img imgtobg"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="servhp-card-cont">
+                      <div class="servhp-card-icon">
+                        <img src="img/icon/construction.webp" alt="" />
+                      </div>
+                      <h3>Basements and Undercrofts</h3>
+                      <p class="truncate-text" data-maxlength="150">
+                        Lorem, adipisicing adipisicing ipsum dolor sit amet
+                        consectetur adipisicing elit. omnis, voluptas
+                        accusantium ex minus...
+                      </p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Service Card 6 -->
+                <div
+                  class="servhp-col col-lg-4 col-md-6 aos-init d-none d-sm-block none-box"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  data-aos-duration="1000"
+                >
+                  <div class="servhp-card">
+                    <div class="servhp-card-img">
+                      <a href="#">
+                        <div
+                          class="imgtobg-o"
+                          style="
+                            background-image: url(img/services/parking-lot.jpg);
+                          "
+                        >
+                          <img
+                            src="img/services/parking-lot.jpg"
+                            alt=""
+                            class="imgtobg-img imgtobg"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="servhp-card-cont">
+                      <div class="servhp-card-icon">
+                        <img src="img/icon/parking-lot.webp" alt="" />
+                      </div>
+                      <h3>Parking Lot Construction</h3>
+                      <p class="truncate-text" data-maxlength="150">
+                        Lorem, adipisicing adipisicing ipsum dolor sit amet
+                        consectetur adipisicing elit. omnis, voluptas
+                        accusantium ex minus...
+                      </p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#" class="btn btn-primary mt-3 py-2 px-4 mb-4"
+                  >View All Services</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services End -->
 
     <!-- Features Start -->
-    <div class="container-fluid bg-light">
-      <div class="container">
+    <section
+      class="container-fluid bg-light"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container" data-aos="fade-in" data-aos-duration="1000">
         <div class="row">
           <div class="col-lg-7">
-            <div class="mt-5 py-2 pr-lg-5">
+            <div
+              class="mt-5 py-2 pr-lg-5"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <h6 class="text-primary font-weight-normal text-uppercase mb-3">
                 Why Choose Us?
               </h6>
               <h2 class="mb-4 section-title">
-                25+ Years Experience in Top-Quality Civil & Earthworks.
+                25+ Years Experience in Top-Quality Civil &amp; Earthworks.
               </h2>
               <p class="mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -444,35 +715,55 @@
                 perferendis quis! Eaque molestias similique consequuntur!
               </p>
               <ul class="list-inline">
-                <li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
                   <strong class="d-flex choose-list"
                     ><i class="far fa-check-square text-primary mr-3"></i>We
                     customize our services to meet the unique needs of each
                     project.</strong
                   >
                 </li>
-                <li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
                   <strong class="d-flex choose-list"
                     ><i class="far fa-check-square text-primary mr-3"></i
                     >Committed to using eco-friendly materials and practices for
                     a greener future.</strong
                   >
                 </li>
-                <li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
                   <strong class="d-flex choose-list"
                     ><i class="far fa-check-square text-primary mr-3"></i>We
                     prioritize punctuality, ensuring your project stays on
                     schedule.</strong
                   >
                 </li>
-                <li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
                   <strong class="d-flex choose-list"
                     ><i class="far fa-check-square text-primary mr-3"></i>We
                     utilize the latest technology and methods for efficient
                     project execution.</strong
                   >
                 </li>
-                <li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
                   <strong class="d-flex choose-list"
                     ><i class="far fa-check-square text-primary mr-3"></i
                     >Committed to maintaining high safety standards on every
@@ -485,23 +776,33 @@
             <!-- counter here -->
             <div class="counter pb-5">
               <div class="row counter-container">
-                <div class="col-md-6">
-                  <div class="counter-item dif-box">
+                <div
+                  class="col-md-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <div class="counter-item dif-box mb-2">
                     <strong
                       class="text-white d-block counter-number"
                       id="satisdiedClients"
-                      >0<span class="plus-sign">+</span></strong
+                      >350 </strong
                     >
                     <p>Satisfied Clients</p>
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                <div
+                  class="col-md-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
                   <div class="counter-item blue-box">
                     <strong
                       class="d-block counter-number"
                       id="completedProjects"
-                      >0<span class="plus-sign">+</span></strong
+                      >150 </strong
                     >
                     <p>Completed Projects</p>
                   </div>
@@ -509,72 +810,88 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-5 d-none d-sm-block">
             <div
               class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
             >
-              <img class="h-100" src="img/lng-img-2.jpg" alt="" />
+              <img class="h-100 why-c-img" src="img/lng-img-2.jpg" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Features End -->
 
     <!-- Projects Start -->
-    <div class="container-fluid py-5">
+    <!-- Section 2: Our Projects -->
+    <section
+      class="container-fluid py-5"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
       <div class="container py-4">
         <div class="row justify-content-center">
-          <div class="col-lg-12 col-md-12 col text-center">
+          <div
+            class="col-lg-12 col-md-12 col text-center"
+            data-aos="fade-in"
+            data-aos-duration="1000"
+          >
             <h6 class="text-primary font-weight-normal text-uppercase mb-3">
               Our Projects
             </h6>
             <h3 class="mb-4 sub-hhd">
-              Some Of Our Exceptifonal Civil & Earthworks Projects
+              Some Of Our Exceptional Civil & Earthworks Projects
             </h3>
           </div>
         </div>
+
         <div class="row">
           <div class="col-12 text-center">
-            <ul class="list-inline mb-4" id="portfolio-flters">
+            <ul
+              class="list-inline mb-4"
+              id="portfolio-flters"
+            >
               <li class="btn btn-outline-primary m-1 active" data-filter="*">
                 All
               </li>
               <li class="btn btn-outline-primary m-1" data-filter=".first">
-                Complete
+                Earthworks
               </li>
               <li class="btn btn-outline-primary m-1" data-filter=".second">
-                Running
+                Civil Construction
               </li>
-              <li class="btn btn-outline-primary m-1" data-filter=".third">
+              <!-- <li class="btn btn-outline-primary m-1" data-filter=".third">
                 Upcoming
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
+
         <div class="row mx-1 portfolio-container">
-          <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first d-none d-sm-block none-box">
             <div class="position-relative overflow-hidden p-1">
               <div
                 class="portfolio-img d-flex align-items-center justify-content-center"
               >
                 <img
                   class="img-fluid"
-                  src="img/services/earth-work.jpg"
+                  src="img/services/parking-lot.jpg"
                   alt=""
                 />
               </div>
               <div
                 class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center"
               >
-                <h4 class="text-white mb-4">Earth Works</h4>
+                <h4 class="text-white mb-4">Parking Lot Construction</h4>
                 <div class="d-flex align-items-center justify-content-center">
-                  <!-- <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a> -->
                   <a
                     class="btn btn-outline-primary m-1"
-                    href="img/services/earth-work.jpg"
+                    href="img/services/parking-lot.jpg"
                     data-lightbox="portfolio"
                   >
                     <i class="fa fa-eye"></i>
@@ -583,9 +900,38 @@
               </div>
             </div>
           </div>
+
           <div
-            class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second d-none d-sm-block"
-          >
+            class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
+            <div class="position-relative overflow-hidden p-1">
+              <div
+                class="portfolio-img d-flex align-items-center justify-content-center"
+              >
+                <img
+                  class="img-fluid"
+                  src="img/services/Basements-Undercrofts.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center"
+              >
+                <h4 class="text-white mb-4">Basements and Undercrofts</h4>
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    class="btn btn-outline-primary m-1"
+                    href="img/services/Basements-Undercrofts.jpg"
+                    data-lightbox="portfolio"
+                  >
+                    <i class="fa fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first">
             <div class="position-relative overflow-hidden p-1">
               <div
                 class="portfolio-img d-flex align-items-center justify-content-center"
@@ -599,11 +945,8 @@
               <div
                 class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center"
               >
-                <h4 class="text-white mb-4">Civil Works</h4>
+                <h4 class="text-white mb-4">Residential Civil Construction</h4>
                 <div class="d-flex align-items-center justify-content-center">
-                  <!-- <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a> -->
                   <a
                     class="btn btn-outline-primary m-1"
                     href="img/services/civil-work.jpg"
@@ -615,35 +958,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item third">
-            <div class="position-relative overflow-hidden p-1">
-              <div
-                class="portfolio-img d-flex align-items-center justify-content-center"
-              >
-                <img class="img-fluid" src="img/abt-2.jpg" alt="" />
-              </div>
-              <div
-                class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center"
-              >
-                <h4 class="text-white mb-4">Paving Preparations</h4>
-                <div class="d-flex align-items-center justify-content-center">
-                  <!-- <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a> -->
-                  <a
-                    class="btn btn-outline-primary m-1"
-                    href="img/abt-2.jpg"
-                    data-lightbox="portfolio"
-                  >
-                    <i class="fa fa-eye"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <!-- Additional Portfolio Items -->
           <div
-            class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first d-none d-sm-block"
-          >
+            class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item first">
             <div class="position-relative overflow-hidden p-1">
               <div
                 class="portfolio-img d-flex align-items-center justify-content-center"
@@ -659,9 +977,6 @@
               >
                 <h4 class="text-white mb-4">Landscape Preparations</h4>
                 <div class="d-flex align-items-center justify-content-center">
-                  <!-- <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a> -->
                   <a
                     class="btn btn-outline-primary m-1"
                     href="img/services/landscape-preps.jpg"
@@ -673,7 +988,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
+
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
             <div class="position-relative overflow-hidden p-1">
               <div
                 class="portfolio-img d-flex align-items-center justify-content-center"
@@ -689,9 +1006,6 @@
               >
                 <h4 class="text-white mb-4">Driveways</h4>
                 <div class="d-flex align-items-center justify-content-center">
-                  <!-- <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a> -->
                   <a
                     class="btn btn-outline-primary m-1"
                     href="img/services/driveways.jpg"
@@ -703,9 +1017,9 @@
               </div>
             </div>
           </div>
+
           <div
-            class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item third d-none d-sm-block"
-          >
+            class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item second">
             <div class="position-relative overflow-hidden p-1">
               <div
                 class="portfolio-img d-flex align-items-center justify-content-center"
@@ -721,9 +1035,6 @@
               >
                 <h4 class="text-white mb-4">Recycled Asphalt</h4>
                 <div class="d-flex align-items-center justify-content-center">
-                  <!-- <a class="btn btn-outline-primary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a> -->
                   <a
                     class="btn btn-outline-primary m-1"
                     href="img/services/recycled-asphalt.jpg"
@@ -738,10 +1049,16 @@
         </div>
       </div>
 
-      <div class="text-center">
+      <div
+        class="text-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+        data-aos-once="true"
+      >
         <a href="#" class="btn btn-primary mt-3 py-2 px-4">View All Projects</a>
       </div>
-    </div>
+    </section>
     <!-- Projects End -->
 
     <!--  banner section starts here  -->
@@ -768,48 +1085,44 @@
     </section>
 
     <!-- Testimonial Start -->
-    <div class="container-fluid">
+    <section class="container-fluid">
       <div class="container">
         <div class="row">
           <div class="col-md-7 pt-5 pr-md-5 pb-5">
-            <h6 class="text-primary font-weight-normal text-uppercase mb-3">
+            <h6 class="text-primary font-weight-normal text-uppercase mb-3" data-aos="fade-up" data-aos-duration="1000">
               Testimonial
             </h6>
-            <h3 class="mb-4 section-title">What Our Clients Say</h3>
+            <h3 class="mb-4 section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              What Our Clients Say
+            </h3>
             <div
               class="owl-carousel testimonial-carousel position-relative pb-5 mb-md-5"
+              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
             >
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center mb-3">
-                  <!-- <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt=""> -->
                   <div class="client-info">
                     <h5>Client Name</h5>
                     <i>Profession</i>
                   </div>
                 </div>
                 <p>
-                  We were impressed by the quality and efficiency of ON GRADE
-                  CIVIL & HIRE. They delivered on time and exceeded our
-                  expectations with their top-notch civil and earthworks
-                  services. A fantastic experience!
+                  We were impressed by the quality and efficiency of ON GRADE CIVIL & HIRE. They delivered on time and exceeded our expectations with their top-notch civil and earthworks services. A fantastic experience!
                 </p>
               </div>
               <div class="d-flex flex-column">
                 <div class="d-flex align-items-center mb-3">
-                  <!-- <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt=""> -->
                   <div class="client-info">
                     <h5>Client Name</h5>
                     <i>Profession</i>
                   </div>
                 </div>
                 <p>
-                  ON GRADE CIVIL & HIRE did an amazing job on our project. They
-                  were professional and really knew their stuff. Highly
-                  recommended!
+                  ON GRADE CIVIL & HIRE did an amazing job on our project. They were professional and really knew their stuff. Highly recommended!
                 </p>
               </div>
             </div>
-            <div class="review-btn pb-3">
+            <div class="review-btn pb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <a href="#" class="btn btn-primary py-2 px-4">View All Reviews</a>
               <a href="#" class="btn btn-primary py-2 px-4">Write a Review</a>
             </div>
@@ -817,8 +1130,8 @@
           <div class="col-md-5">
             <div
               class="d-flex flex-column align-items-center justify-content-center h-100 testimonial-form align-items-center"
+              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
             >
-              <!-- <img class="h-100" src="img/lng-img-2.jpg" alt=""> -->
               <div id="success"></div>
               <div class="contact-form">
                 <div id="success"></div>
@@ -909,7 +1222,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Testimonial End -->
 
     <!-- Footer Start -->
@@ -919,14 +1232,9 @@
           <div class="footer-info mb-2">
             <img src="img/logo.svg" alt="" />
           </div>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi non, expedita officia nemo nostru</p> -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi non, expedita officia nemo nostru</p>
           <!-- <h4 class="text-primary mb-4">Get In Touch</h4> -->
-          <p><i class="fa fa-map-marker-alt mr-2"></i>Duncraig, WA 6023</p>
-          <p>
-            <i class="fa fa-phone-alt mr-2"></i
-            ><a class="text-white" href="tel:0434406455"> 0434406455</a>
-          </p>
-          <p><i class="fa fa-envelope mr-2"></i>demo@example.com</p>
+          
         </div>
         <div class="col-lg-2 col-md-6 mb-3">
           <h4 class="text-primary mb-4">Quick Links</h4>
@@ -948,39 +1256,49 @@
             >
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-          <h4 class="text-primary mb-4">Our Services</h4>
-          <div class="justify-content-start div-wid">
-            <a class="text-white mb-2 flex-div" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Earth Works</a
-            >
-            <a class="text-white mb-2 flex-div" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Civil Works</a
-            >
-            <a class="text-white mb-2 flex-div" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Recycled Asphalt</a
-            >
-            <a class="text-white mb-2 flex-div" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Driveways</a
-            >
-            <a class="text-white mb-2 flex-div" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Paving Preparations</a
-            >
-            <a class="text-white mb-2 flex-div" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Landscape Preps</a
-            >
-            <a class="text-white mb-2 flex-div" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>SoakWell Installation</a
-            >
-          </div>
-        </div>
         <div class="col-lg-3 col-md-6 mb-3">
+          <h4 class="text-primary mb-4">Contact Info</h4>
+
+          <p><i class="fa fa-map-marker-alt mr-2"></i>Duncraig, WA 6023</p>
+<p>
+  <i class="fa fa-phone-alt mr-2"></i>
+  <a class="text-white" href="tel:0434406455">0434406455</a>
+</p>
+<p><i class="fa fa-envelope mr-2"></i>demo@example.com</p>
+<p><i class="fa fa-clock mr-2"></i> Mon - Fri : 9 AM - 5 PM</p>
+
+          <!-- <div class="justify-content-start div-wid">
+            <a class="text-white mb-2 flex-div" href="#"
+              ><i class="fa fa-angle-right mr-2 mt-1"></i>Our Services</a
+            >
+            <a class="text-white mb-2 flex-div" href="#"
+              ><i class="fa fa-angle-right mr-2 mt-1"></i>Limestone Driveways</a
+            >
+            <a class="text-white mb-2 flex-div" href="#"
+              ><i class="fa fa-angle-right mr-2 mt-1"></i>Stormwater
+              Drainage/Soakwells</a
+            >
+            <a class="text-white mb-2 flex-div" href="#"
+              ><i class="fa fa-angle-right mr-2 mt-1"></i>Residential Civil
+              Construction</a
+            >
+            <a class="text-white mb-2 flex-div" href="#"
+              ><i class="fa fa-angle-right mr-2 mt-1"></i>Basements and
+              Undercrofts</a
+            >
+            <a class="text-white mb-2 flex-div" href="#"
+              ><i class="fa fa-angle-right mr-2 mt-1"></i>Parking Lot
+              Construction</a
+            >
+          </div> -->
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
           <!-- <h4 class="text-primary mb-4">Here We Are Located</h4> -->
           <div class="map-footer">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27118.171602474362!2d115.75799339651034!3d-31.83121649065006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32ac15d9378537%3A0x1c04f0b88014a730!2sDuncraig%20WA%206023%2C%20Australia!5e0!3m2!1sen!2snp!4v1724150145704!5m2!1sen!2snp"
               height="230"
-              style="border: 0"
+              style="border: 0;"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -991,19 +1309,19 @@
       <div class="d-flex justify-content-center mb-4">
         <a
           class="btn btn-outline-light rounded-circle text-center mr-4 px-0"
-          style="width: 38px; height: 38px"
+          style="width: 38px; height: 38px;"
           href="#"
           ><i class="fab fa-twitter"></i
         ></a>
         <a
           class="btn btn-outline-light rounded-circle text-center mr-4 px-0"
-          style="width: 38px; height: 38px"
+          style="width: 38px; height: 38px;"
           href="#"
           ><i class="fab fa-facebook-f"></i
         ></a>
         <a
           class="btn btn-outline-light rounded-circle text-center mr-4 px-0"
-          style="width: 38px; height: 38px"
+          style="width: 38px; height: 38px;"
           href="#"
           ><i class="fab fa-instagram"></i
         ></a>
@@ -1045,6 +1363,9 @@
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

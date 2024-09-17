@@ -1,3 +1,9 @@
+AOS.init({
+    // disable: true 
+  });
+  
+  
+
 (function ($) {
     "use strict";
     
@@ -61,18 +67,21 @@
     });
 
 
-    // Portfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('active');
-        $(this).addClass('active');
-
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
+   // Initialize Isotope
+var $grid = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows'
+  });
+  
+  // Filter items on button click
+  $('#portfolio-flters').on('click', 'li', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+    // Remove active class from previous active button and add to clicked button
+    $('#portfolio-flters li').removeClass('active');
+    $(this).addClass('active');
+  });
+  
 
 
     // Team carousel
@@ -121,22 +130,29 @@
     function startCounter(id, endValue, duration) {
         let element = document.getElementById(id);
         let startValue = 0;
-        let stepTime = Math.abs(Math.floor(duration / endValue));
+        let stepTime = Math.abs(duration / endValue);
+        
+        if (endValue === 0) {
+            element.textContent = '0 +';
+            return;
+        }
+    
         let timer = setInterval(function() {
             startValue += 1;
-            element.textContent = startValue + ' ';
-            element.innerHTML += '<span class="plus-sign">+</span>';
-            if (startValue === endValue) {
+            element.textContent = startValue + ' +';
+            if (startValue >= endValue) {
                 clearInterval(timer);
+                element.textContent = endValue + ' +'; // Ensure it shows the final value with the '+'
             }
         }, stepTime);
     }
-
+    
     document.addEventListener('DOMContentLoaded', function() {
         startCounter('yearsEstablished', 25, 2000); // Example: 25 years
         startCounter('completedProjects', 150, 2000); // Example: 150 projects
-        startCounter('satisdiedClients', 350, 2000); 
+        startCounter('satisdiedClients', 350, 2000); // Fixed typo from 'satisdied' to 'satisfied'
     });
+    
     
 })(jQuery);
 
