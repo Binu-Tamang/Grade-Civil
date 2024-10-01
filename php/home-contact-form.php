@@ -14,7 +14,7 @@
         exit();
     } else {
         // multiple recipients
-        $to  = 'ongradecivil@outlook.com.au,info@mapleleapgroups.com';
+        $to  = 'binu@mapleleapgroups.com';
 
         // Construct message body
         $message = '
@@ -59,7 +59,7 @@
           <table id="logotable">
             <img src="https://ongradecivilandhire.com.au/assets/img/logo.png" alt="LOGO" id="logo">
           </table>
-          <h1 id="title">Contact Us Form</h1>
+          <h1 id="title">Home Contact Form</h1>
           <table id="contenttable" style="max-width:767px; margin:0 auto;">
             <tr>
               <td>Name</td><td>' . $fullname . '</td>

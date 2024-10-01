@@ -71,7 +71,7 @@
                     </div>
                     <div class="col-lg-7 mb-5 my-lg-2 py-3 pl-lg-3">
                         <h3 class="mb-4 section-title">
-                        Contact Us
+                            Contact Us
                         </h3>
                         <div class="contact-form">
                             <div id="success"></div>
@@ -108,6 +108,9 @@
                                     <textarea name="frmMessage" class="form-control p-4" rows="6" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter your message" aria-invalid="false"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
+                                <div class="col-12 mb-3 p-0">
+                                    <div id="google_recaptcha"></div>
+                                </div>
                                 <div class="home-form-btn">
                                     <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">
                                         Send Message
@@ -124,18 +127,45 @@
 
     <!-- ---------------------------footer starts--------------------- -->
     <?php
-
     include('inc/footer.php');
-    include('inc/js.php')
+    include('inc/js.php'); // Added a semicolon here
     ?>
 
     <script>
-        const navItems = document.querySelectorAll('.navbar-nav > a ');
+        const navItems = document.querySelectorAll('.navbar-nav > a');
         if (navItems.length >= 5) {
             navItems[4].classList.add("active");
         }
     </script>
 
+    <!-- FOR THE RECAPTCHA FORM -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
+    <script>
+        var onloadCallback = function() {
+            grecaptcha.render('google_recaptcha', {
+                'sitekey': '6LeYZVMqAAAAAOXUGhz7h6taYsM-NpuJHTjFwt_l'
+            });
+        };
+
+        // Form Submit Event
+        $("#submit-form").click(function(event) { // Added 'event' as a parameter
+            event.preventDefault(); // Prevent default form submission
+            var form = $('#contactForm');
+            if (form[0].checkValidity() === false) {
+                alert('Please check the form for any errors!');
+            } else {
+                var rcres = grecaptcha.getResponse();
+                if (rcres.length) {
+                    grecaptcha.reset();
+                    form.submit();
+                    // showHideMsg("Form Submitted!", "success");
+                } else {
+                    alert("Please verify reC    APTCHA");
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

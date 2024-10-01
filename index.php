@@ -19,29 +19,23 @@
 
   <!-- Carousel Start -->
   <section class="container-fluid p-0">
-      <div id="header-carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="w-100" src="assets/img/silder-2.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex flex-column align-items-center justify-content-center"
-            >
-              <div class="p-3" style="max-width: 800px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <span
-                  class="text-white d-block text-uppercase font-weight-normal mb-md-3"
-                  >Your Trusted
-                </span>
-                <strong class="display-4 banner-tittle text-white mb-md-4"
-                  >Civil and Earthworks Expert's In Perth</strong
-                >
-                <a href="about.php" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4"
-                  >Learn More</a
-                >
-              </div>
+    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="assets/img/silder-2.jpg" alt="Image" />
+          <div
+            class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 800px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <span
+                class="text-white d-block text-uppercase font-weight-normal mb-md-3">Your Trusted
+              </span>
+              <strong class="display-4 banner-tittle text-white mb-md-4">Civil and Earthworks Expert's In Perth</strong>
+              <a href="about.php" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Learn More</a>
             </div>
           </div>
         </div>
-        <!-- <a
+      </div>
+      <!-- <a
           class="carousel-control-prev"
           href="#header-carousel"
           data-slide="prev"
@@ -59,8 +53,8 @@
             <span class="carousel-control-next-icon mb-n2"></span>
           </div>
         </a> -->
-      </div>
-    </section>
+    </div>
+  </section>
   <!-- Carousel End -->
 
   <!-- About Start -->
@@ -729,7 +723,7 @@
   <section class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-md-7 pt-5 pr-md-5 pb-5">
+        <div class="col-md-6 pt-5 pr-md-5 pb-5">
           <h6 class="text-primary font-weight-normal text-uppercase mb-3" data-aos="fade-up" data-aos-duration="1000">
             Testimonial
           </h6>
@@ -767,39 +761,24 @@
             <a href="#" class="btn btn-primary py-2 px-4">Write a Review</a>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <div
             class="d-flex flex-column align-items-center justify-content-center h-100 testimonial-form align-items-center"
             data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
             <div id="success"></div>
             <div class="contact-form">
               <div id="success"></div>
-              <form
-                name="sentMessage"
-                id="contactForm"
-                novalidate="novalidate">
+              <form name="sentMessage" id="contactForm" novalidate="novalidate" action="php/home-contact-form.php" method="post">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="control-group">
-                      <input
-                        type="text"
-                        class="form-control p-4"
-                        id="fullname"
-                        placeholder="Full Name"
-                        required="required"
-                        data-validation-required-message="Please enter your full name" />
+                      <input name="frmfullName" type="text" class="form-control p-4" id="fullname" placeholder="Full Name" required="required" data-validation-required-message="Please enter your full name" aria-invalid="false">
                       <p class="help-block text-danger"></p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="control-group">
-                      <input
-                        type="tel"
-                        class="form-control p-4"
-                        id="phone"
-                        placeholder="Phone Number"
-                        required="required"
-                        data-validation-required-message="Please enter your phone number" />
+                      <input name="frmphoneNumber" type="tel" class="form-control p-4" id="phone" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number" aria-invalid="false">
                       <p class="help-block text-danger"></p>
                     </div>
                   </div>
@@ -807,46 +786,29 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="control-group">
-                      <input
-                        type="email"
-                        class="form-control p-4"
-                        id="email"
-                        placeholder="Email"
-                        required="required"
-                        data-validation-required-message="Please enter your email" />
+                      <input name="frmEmail" type="email" class="form-control p-4" id="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email" aria-invalid="false">
                       <p class="help-block text-danger"></p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="control-group">
-                      <input
-                        type="text"
-                        class="form-control p-4"
-                        id="subject"
-                        placeholder="Subject"
-                        required="required"
-                        data-validation-required-message="Please enter a subject" />
+                      <input name="frmSubject" type="text" class="form-control p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" aria-invalid="false">
                       <p class="help-block text-danger"></p>
                     </div>
                   </div>
                 </div>
                 <div class="control-group">
-                  <textarea
-                    class="form-control p-4"
-                    rows="6"
-                    id="message"
-                    placeholder="Your Message"
-                    required="required"
-                    data-validation-required-message="Please enter your message"></textarea>
+                  <textarea name="frmMessage" class="form-control p-4" rows="6" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter your message" aria-invalid="false"></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
-                <div class="home-form-btn">
-                  <button
-                    class="btn btn-primary py-3 px-5"
-                    type="submit"
-                    id="sendMessageButton">
-                    Send Message
-                  </button>
+
+                <div class="col-12 mb-2 p-0 d-flex justify-content-between">
+                  <div id="google_recaptcha"></div>
+                  <div class="home-form-btn ml-2 d-flex align-items-center">
+                    <button class="btn btn-primary py-3 px-3" type="submit" id="sendMessageButton">
+                      Send Message
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -869,6 +831,35 @@
     if (navItems.length >= 1) {
       navItems[0].classList.add("active");
     }
+  </script>
+
+  <!-- FOR THE RECAPTCHA FORM -->
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
+  <script>
+    var onloadCallback = function() {
+      grecaptcha.render('google_recaptcha', {
+        'sitekey': '6LeYZVMqAAAAAOXUGhz7h6taYsM-NpuJHTjFwt_l'
+      });
+    };
+
+    // Form Submit Event
+    $("#submit-form").click(function(event) { // Added 'event' as a parameter
+      event.preventDefault(); // Prevent default form submission
+      var form = $('#contactForm');
+      if (form[0].checkValidity() === false) {
+        alert('Please check the form for any errors!');
+      } else {
+        var rcres = grecaptcha.getResponse();
+        if (rcres.length) {
+          grecaptcha.reset();
+          form.submit();
+          // showHideMsg("Form Submitted!", "success");
+        } else {
+          alert("Please verify reC    APTCHA");
+        }
+      }
+    });
   </script>
 
 </body>
